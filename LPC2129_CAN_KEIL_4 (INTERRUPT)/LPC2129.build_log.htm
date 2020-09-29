@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+I:\LPC2129_CAN_KEIL_4 (INTERRUPT)\LPC2129.uvproj
+Project File Date:  08/03/2020
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(90): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                                                                                                 can_init(data);
+main.c(92): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                                                                                                 uart_tx(data);
+main.c(97): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                                                                                                can_tx(data);                                                      // CAN Transmit Function     (Sending the CCP frame to Slave)
+main.c(99): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                                                                                                uart_tx(a);                                                                                              // Uart Transmit Function (Sending received CCP frame to GUI)
+main.c(123): warning:  #1-D: last line of file ends without a newline
+                  }
+main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=1576 RO-data=32 RW-data=20 ZI-data=1268  
+FromELF: creating hex file...
+".\LPC2129.axf" - 0 Error(s), 5 Warning(s).
